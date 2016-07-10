@@ -5,3 +5,52 @@ div.leftbruin{
 div.rightbash{
 
 }
+
+
+/*Arch*/
+.tophalf {
+    position:absolute;
+    width: 588px; height:300px;
+    -webkit-border-top-left-radius: 579px;
+    -webkit-border-top-right-radius: 579px;
+    -moz-border-radius-topleft: 579px;
+    -moz-border-radius-topright: 579px;
+    border-top-left-radius: 579px;
+    border-top-right-radius: 579px;
+
+    background: -moz-linear-gradient(left, #ffff00 1%, #00cc99 51%, #33ccff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ffff00), color-stop(51%,#33ccff), color-stop(100%,#33ccff));
+    background: -webkit-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
+    background: -o-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
+    background: -ms-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
+    background: linear-gradient(to right, #ffff00 15%,#00cc99 51%,#33ccff 100%);
+}
+
+.inner {
+    position: relative; z-index: 1;
+    top: 21px; left: 36px;
+    width: 519px; height: 480px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+.bottomhalf {
+    position:absolute;
+    top:300px;
+    width: 588px; height:300px;
+    background: white;
+}
+
+/*AND THEN THE LAST PART THAT I DON'T QUITE KNOW HOW TO UNIFY*/
+
+/*Basically the idea is to have this cover white square that rotates in front of the arch*/
+
+.cover {
+    position:absolute;
+    top:100px;
+    width: 800px; height:500px;
+    background: white;
+    -ms-transform: rotate(-70deg);
+    -webkit-transform: rotate(-70deg);
+    transform: rotate(-70deg);
+}
