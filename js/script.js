@@ -7,6 +7,8 @@ $(document).ready(function(){
     //when clicked, background changes to blue, and royce becomes neon
     $(window).on('click',function(){
         $('body').css({'background-color':'darkblue'});
-
+        $('.cover').css({'background-color':'darkblue'});
+        $('.inner').css({'background-color':'darkblue'});
+        $('.bottomhalf').css({'background-color':'darkblue'})
     });
 });

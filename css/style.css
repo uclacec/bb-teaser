@@ -1,3 +1,9 @@
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
 div.leftbruin{
 
 }
@@ -8,6 +14,11 @@ div.rightbash{
 
 
 /*Arch*/
+#arc{
+    position:absolute;
+    left:30vw;
+    top:18vh;
+}
 .tophalf {
     position:absolute;
     width: 588px; height:300px;
@@ -60,6 +71,6 @@ div.rightbash{
     position:absolute;
     z-index:5;
     width:40vw;
-    top:20vh;
+    top:25vh;
     left:30vw;
 }
