@@ -9,20 +9,32 @@ $(document).ready(function(){
         today = new Date();
     //alert( Math.round((end - start) * 100) / today );
 
-    //when clicked, background changes to blue, and royce becomes neon
+    //when clicked, background changes to blue
     $(window).on('click',function(){
-        $('body').css({'background-color':'darkblue'});
-        $('.cover').css({'background-color':'darkblue'});
-        $('.inner').css({'background-color':'darkblue'});
-        $('.bottomhalf').css({'background-color':'darkblue'})
-
         var lightsoff = new Howl({
-         urls: ['assets/lightsoff.mp3']
+            urls: ['assets/lightsoff.mp3']
         }).play();
 
         var cheer = new Howl({
-         urls: ['assets/crowdcheer.mp3']
-        }).play().fadeout();
+            urls: ['assets/crowdcheer.mp3']
+        }).play();
+
+        $('body').css({'background-color':'darkblue'});
+        $('.cover').css({'background-color':'darkblue'});
+        $('.inner').css({'background-color':'darkblue'});
+        $('.bottomhalf').css({'background-color':'darkblue'});
+
+
+        var $day=$('#day');
+        var $neon=$('#neon');
+        $day.css({display:'none'});
+        
+        setTimeout(function(){
+            $('#glow').fadeIn('slow');
+            $('#glow2').fadeIn('slow');
+            $('.night').fadeIn('slow');
+            //insert buzzing sound
+        },5000);
 
     });
 });

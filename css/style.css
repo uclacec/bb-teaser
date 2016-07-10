@@ -16,8 +16,8 @@ div.rightbash{
 /*Arch*/
 #arc{
     position:absolute;
-    left:30vw;
-    top:18vh;
+    left:28vw;
+    top:19vh;
 }
 .tophalf {
     position:absolute;
@@ -67,10 +67,46 @@ div.rightbash{
 }
 
 /*Royce*/
-#royce{
+.royce{
     position:absolute;
-    z-index:5;
-    width:40vw;
-    top:25vh;
-    left:30vw;
+    z-index:3;
+    width:35vw;
+    top:50vh;
+    left:50vw;
+    margin:-17vh 0 0 -17.5vw;
 }
+
+@media only screen and (max-width: 500px) {
+    .royce{
+        position:absolute;
+        z-index:3;
+        width:90vw;
+        margin:-15vh 0 0 -44vw;
+    }
+}
+
+#neon{position:absolute;z-index:10;}
+.night{display:none;}
+.light{}
+
+/*glowing animation*/
+@keyframes glow {
+    0% {opacity:1;}
+    50% {opacity:0;}
+    100%{opacity:1;}
+}
+#glow{
+    animation: glow infinite linear 2s;
+}
+
+
+/*
+#line{
+    position:absolute;
+    height:100vh;
+    background-color:black;
+    width:2px;
+    left:50vw;
+    z-index:10;
+}
+*/
