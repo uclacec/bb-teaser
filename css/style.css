@@ -54,3 +54,12 @@ div.rightbash{
     -webkit-transform: rotate(-70deg);
     transform: rotate(-70deg);
 }
+
+/*Royce*/
+#royce{
+    position:absolute;
+    z-index:5;
+    width:40vw;
+    top:20vh;
+    left:30vw;
+}
