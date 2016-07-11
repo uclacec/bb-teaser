@@ -12,10 +12,10 @@ $(document).ready(function(){
     //when clicked, background changes to blue
     $(window).on('click',function(){
         $(".bruin").animate({
-            left: "0px",}, 1000 );
+            left: "0%",}, 1000 );
         
         $(".bash").animate({
-            left: "480px",}, 1000);
+            left: "87%",}, 1000);
         setTimeout(function(){
             var lightsoff = new Howl({
                 urls: ['assets/lightsoff.mp3']

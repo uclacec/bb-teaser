@@ -7,20 +7,20 @@ body{
 div.header{
     position:relative;
     top:65vh;
-    left:30vw;
-    right:30vw;
+    left:33vw;
+    width: 33vw;
     z-index: 40;
     font-size: 200%;
 }
 
 div.bruin{
     position:absolute;
-    left:190px;
+    left:27.5%;
 }
 
 div.bash{
     position:absolute;
-    left:290px;
+    left:52.5%;
 }
 
 
