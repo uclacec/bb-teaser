@@ -4,12 +4,23 @@ body{
     overflow:hidden;
 }
 
-div.leftbruin{
-
+div.header{
+    position:relative;
+    top:65vh;
+    left:30vw;
+    right:30vw;
+    z-index: 40;
+    font-size: 200%;
 }
 
-div.rightbash{
+div.bruin{
+    position:absolute;
+    left:190px;
+}
 
+div.bash{
+    position:absolute;
+    left:290px;
 }
 
 
@@ -86,8 +97,13 @@ div.rightbash{
 }
 
 #neon{position:absolute;z-index:10;}
-.night{display:none;}
-.light{}
+.night{
+    display:none;
+    color: #F106C0;
+}
+.light{
+    color: darkblue;
+}
 
 /*glowing animation*/
 @keyframes glow {

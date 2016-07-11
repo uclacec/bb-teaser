@@ -11,30 +11,36 @@ $(document).ready(function(){
 
     //when clicked, background changes to blue
     $(window).on('click',function(){
-        var lightsoff = new Howl({
-            urls: ['assets/lightsoff.mp3']
-        }).play();
-
-        var cheer = new Howl({
-            urls: ['assets/crowdcheer.mp3']
-        }).play();
-
-        $('body').css({'background-color':'darkblue'});
-        $('.cover').css({'background-color':'darkblue'});
-        $('.inner').css({'background-color':'darkblue'});
-        $('.bottomhalf').css({'background-color':'darkblue'});
-
-
-        var $day=$('#day');
-        var $neon=$('#neon');
-        $day.css({display:'none'});
+        $(".bruin").animate({
+            left: "0px",}, 1000 );
         
+        $(".bash").animate({
+            left: "480px",}, 1000);
         setTimeout(function(){
-            $('#glow').fadeIn('slow');
-            $('#glow2').fadeIn('slow');
-            $('.night').fadeIn('slow');
-            //insert buzzing sound
-        },5000);
+            var lightsoff = new Howl({
+                urls: ['assets/lightsoff.mp3']
+            }).play();
 
+            var cheer = new Howl({
+                urls: ['assets/crowdcheer.mp3']
+            }).play();
+
+            $('body').css({'background-color': 'darkblue'});
+            $('.cover').css({'background-color': 'darkblue'});
+            $('.inner').css({'background-color': 'darkblue'});
+            $('.bottomhalf').css({'background-color': 'darkblue'});
+
+
+            var $day = $('#day');
+            var $neon = $('#neon');
+            $day.css({display: 'none'});
+
+            setTimeout(function () {
+                $('#glow').fadeIn('slow');
+                $('#glow2').fadeIn('slow');
+                $('.night').fadeIn('slow');
+                //insert buzzing sound
+            }, 5000);
+        }, 1500);
     });
 });
