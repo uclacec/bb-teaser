@@ -68,7 +68,12 @@ $(document).ready(function(){
                     $('#glow').fadeIn('slow');
                     $('#glow2').fadeIn('slow');
                     $('.night').fadeIn('slow');
+
+                var buzz = new Howl({
+                    urls: ['assets/buzz.mp3']
+                }).play();
                     //insert buzzing sound
+
                 }, 5000);
             }, 1500);
         }
