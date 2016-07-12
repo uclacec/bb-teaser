@@ -20,7 +20,6 @@ div.bruin{
 
 div.bash{
     position:absolute;
-    left:52.5%;
 }
 
 
@@ -93,6 +92,18 @@ div.bash{
         z-index:3;
         width:90vw;
         margin:-15vh 0 0 -44vw;
+    }
+    div.header{
+        position:absolute;
+        width:90vw;
+        font-size: 150%;
+        margin:-5vw 0 0 -28vw;
+    }
+    div.bruin{
+        left:33%;
+    }
+    div.bash{
+        left: 53%;
     }
 }
 
