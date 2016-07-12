@@ -30,36 +30,55 @@ div.bash{
     top:19vh;
 }
 .tophalf {
-    position:absolute;
-    width: 588px; height:300px;
-    -webkit-border-top-left-radius: 579px;
-    -webkit-border-top-right-radius: 579px;
-    -moz-border-radius-topleft: 579px;
-    -moz-border-radius-topright: 579px;
-    border-top-left-radius: 579px;
-    border-top-right-radius: 579px;
+    position: absolute; z-index: -1;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50%; height:180%;
+    -webkit-border-top-left-radius: 50%;
+    -webkit-border-top-right-radius: 50%;
+    -moz-border-radius-topleft: 50%;
+    -moz-border-radius-topright: 50%;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
 
-    background: -moz-linear-gradient(left, #ffff00 1%, #00cc99 51%, #33ccff 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(1%,#ffff00), color-stop(51%,#33ccff), color-stop(100%,#33ccff));
-    background: -webkit-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
-    background: -o-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
-    background: -ms-linear-gradient(left, #ffff00 1%,#00cc99 51%,#33ccff 100%);
-    background: linear-gradient(to right, #ffff00 15%,#00cc99 51%,#33ccff 100%);
+    background: -moz-linear-gradient(left, #ffff00 15%, #00cc99 65%, #33ccff 90%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(15%,#ffff00), color-stop(65%,#33ccff), color-stop(90%,#33ccff));
+    background: -webkit-linear-gradient(left, #ffff00 15%,#00cc99 65%,#33ccff 90%);
+    background: -o-linear-gradient(left, #ffff00 15%,#00cc99 65%,#33ccff 90%);
+    background: -ms-linear-gradient(left, #ffff00 15%,#00cc99 65%,#33ccff 90%);
+    background: linear-gradient(to right, #ffff00 15%,#00cc99 65%,#33ccff 90%);
 }
 
 .inner {
-    position: relative; z-index: 1;
-    top: 21px; left: 36px;
-    width: 519px; height: 480px;
+    position: absolute; z-index: 1;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 45%; height: 150%;
     background-color: white;
+    border-color: white;
     border-radius: 100%;
 }
 
 .bottomhalf {
-    position:absolute;
-    top:300px;
-    width: 588px; height:300px;
+    position:absolute; z-index: 0;
+    left: 50%;
+    transform: translate(-50%);
+    top:100%;
+    width: 50%; height:300%;
     background: white;
+}
+
+.cover {
+    position: absolute; z-index: 2;
+    left: percentToShiftCover;
+    top: 0%;
+    width: 50%; height: 300%;
+    background: white;
+// -ms-transform: rotate(-70deg);
+// -webkit-transform: rotate(-70deg);
+// transform: rotate(-70deg);
 }
 
 /*AND THEN THE LAST PART THAT I DON'T QUITE KNOW HOW TO UNIFY*/
