@@ -9,38 +9,58 @@ $(document).ready(function(){
         today = new Date();
     //alert( Math.round((end - start) * 100) / today );
 
+    var clickFlag = 0;
+    //keep "Bruin Bash" centered
+    var centerHeader = function() {
+        if (!clickFlag) {
+            var offset = 105;
+            if ($(window).width() <= 500) {
+                offset = 75;
+            }
+            var bruinPos = $(".bruin").position();
+            var bashPos = bruinPos.left + offset;
+            $(".bash").css({"left": bashPos.toString() + "px"});
+        }
+    }
+    var timer = setInterval(centerHeader, 100);
+    
     //when clicked, background changes to blue
     $(window).on('click',function(){
-        $(".bruin").animate({
-            left: "0%",}, 1000 );
-        
-        $(".bash").animate({
-            left: "87%",}, 1000);
-        setTimeout(function(){
-            var lightsoff = new Howl({
-                urls: ['assets/lightsoff.mp3']
-            }).play();
+        if(!clickFlag) {
+            $(".bruin").animate({
+                left: "0%"
+            }, 1000);
 
-            var cheer = new Howl({
-                urls: ['assets/crowdcheer.mp3']
-            }).play();
-
-            $('body').css({'background-color': 'darkblue'});
-            $('.cover').css({'background-color': 'darkblue'});
-            $('.inner').css({'background-color': 'darkblue'});
-            $('.bottomhalf').css({'background-color': 'darkblue'});
-
-
-            var $day = $('#day');
-            var $neon = $('#neon');
-            $day.css({display: 'none'});
-
+            $(".bash").animate({
+                left: "87%",
+            }, 1000);
             setTimeout(function () {
-                $('#glow').fadeIn('slow');
-                $('#glow2').fadeIn('slow');
-                $('.night').fadeIn('slow');
-                //insert buzzing sound
-            }, 5000);
-        }, 1500);
+                var lightsoff = new Howl({
+                    urls: ['assets/lightsoff.mp3']
+                }).play();
+
+                var cheer = new Howl({
+                    urls: ['assets/crowdcheer.mp3']
+                }).play();
+
+                $('body').css({'background-color': 'darkblue'});
+                $('.cover').css({'background-color': 'darkblue'});
+                $('.inner').css({'background-color': 'darkblue'});
+                $('.bottomhalf').css({'background-color': 'darkblue'});
+
+
+                var $day = $('#day');
+                var $neon = $('#neon');
+                $day.css({display: 'none'});
+
+                setTimeout(function () {
+                    $('#glow').fadeIn('slow');
+                    $('#glow2').fadeIn('slow');
+                    $('.night').fadeIn('slow');
+                    //insert buzzing sound
+                }, 5000);
+            }, 1500);
+        }
+        clickFlag = 1;
     });
 });
