@@ -22,29 +22,36 @@ $(document).ready(function(){
 
     var clickFlag = 0;
     //keep "Bruin Bash" centered
+
     var centerHeader = function() {
         if (!clickFlag) {
-            var offset = 105;
-            if ($(window).width() <= 500) {
-                offset = 75;
-            }
-            var bruinPos = $(".bruin").position();
-            var bashPos = bruinPos.left + offset;
+            var offset = 110;
+            var bashPos = $(".bruin").position().left + offset;
             $(".bash").css({"left": bashPos.toString() + "px"});
         }
     }
     var timer = setInterval(centerHeader, 100);
-    
+
     //when clicked, background changes to blue
     $(window).on('click',function(){
         if(!clickFlag) {
-            $(".bruin").animate({
-                left: "0%"
-            }, 1000);
-
-            $(".bash").animate({
-                left: "87%",
-            }, 1000);
+            if ($(window).width() > 500) {
+                $(".bash").animate({
+                    left: "85%",
+                }, 1000);
+                $(".bruin").animate({
+                    left: "-2%"
+                }, 1000);
+            }
+            else{
+                $(".bruin").animate({
+                    left: "2%"
+                }, 1000);
+                $(".bash").animate({
+                    left: "70%",
+                }, 1000)
+            }
+                
             setTimeout(function () {
                 var lightsoff = new Howl({
                     urls: ['assets/lightsoff.mp3']
@@ -75,7 +82,7 @@ $(document).ready(function(){
                     //insert buzzing sound
 
                 }, 5000);
-            }, 1500);
+            }, 1200);
         }
         clickFlag = 1;
     });
