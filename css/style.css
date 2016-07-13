@@ -13,13 +13,16 @@ div.header{
     font-size: 200%;
 }
 
-div.bruin{
+.bruin{
     position:absolute;
     left:27.5%;
+    height:5vh;
 }
 
-div.bash{
+.bash{
     position:absolute;
+    left:52.5%;
+    height:5vh;
 }
 
 
@@ -105,6 +108,7 @@ div.bash{
     margin:-17vh 0 0 -17.5vw;
 }
 
+
 @media only screen and (max-width: 500px) {
     .royce{
         position:absolute;
@@ -114,15 +118,15 @@ div.bash{
     }
     div.header{
         position:absolute;
-        width:90vw;
+        width:100vw;
         font-size: 150%;
-        margin:-5vw 0 0 -28vw;
+        margin: -3vh 0 0 -25vw;
     }
-    div.bruin{
-        left:33%;
+    .bruin{
+        left:20%;
     }
-    div.bash{
-        left: 53%;
+    .bash{
+        left: 45%;
     }
 }
 
