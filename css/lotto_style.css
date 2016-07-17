@@ -1,0 +1,51 @@
+@font-face {
+    font-family:din;
+    src:url("assets/din_regular.ttf");
+}
+
+body{
+    background-color:white;
+}
+
+.royce{
+    position:absolute;
+    z-index:3;
+    width:35vw;
+    top:50vh;
+    left:50vw;
+    margin:-17vh 0 0 -17.5vw;
+}
+
+#lotto_text{
+    position:absolute;
+    top:70vh;
+    left:30vw;
+    height: 20vw;
+    font-family:"din";
+    text-align:center;
+    color:pink;
+    font-size:150%;
+}
+
+#spacer{
+    width: 200px;
+    height: 100px;
+    float:left;
+    display:inline-block
+}
+
+@media only screen and (max-width: 500px){
+    .royce{
+        position:absolute;
+        z-index:3;
+        width:90vw;
+        margin:-15vh 0 0 -44vw;
+    }
+    div#lotto_text{
+        word-break:break-all;
+        position:absolute;
+        width:100vw;
+        font-size:100%;
+        margin-left: -30vw;
+    }
+}
