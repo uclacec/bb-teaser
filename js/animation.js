@@ -26,7 +26,8 @@ $(document).ready(function(){
                 }
                 else{
                     $(".bruin").animate({left: "2%"}, 800);
-                    $(".bash").animate({left: "70%"}, 800)
+                    $(".bash").animate({left: "70%"}, 800);
+                    $('#click').attr('src','assets/Tap.gif');
                 }
 
                 //0 - 2 seconds in: crowds murmuring
