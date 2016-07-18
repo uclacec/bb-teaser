@@ -14,18 +14,14 @@ body{
     background-color: darkblue; /* Green */
     font-family: din;
     position:absolute;
-    left:50vw;
-    top:10vh;
+    bottom: 2vh;
+    right: 1vw;
     z-index: 41;
-    border: 5px solid white;
-    border-radius:4cm;
-    color: white;
-    padding: 25px 32px;
-    margin-left: -100px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+    color:white !important;
+    font-size: 28px;
+    padding: 15px 30px;
 }
+
 /*Header*/
 div.header{
     position:relative;
@@ -151,12 +147,21 @@ div.header{
     .bash{
         left: 45%;
     }
+    .button{
+        font-size:20px;
+        right:50px;
+        margin-right: -50px;
+    }
 }
 
 #neon{position:absolute;z-index:10;}
 .night{
     display:none;
     color: #F106C0;
+}
+
+.night_header{
+    display:none;
 }
 
 .light{

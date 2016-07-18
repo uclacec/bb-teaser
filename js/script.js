@@ -21,7 +21,7 @@ $(document).ready(function(){
     var percentToShiftCover = 25 + Math.round((today - start)/(end - start) * 100) + '%';
 
     var clickFlag = 0;
-    
+
     //keep "Bruin Bash" centered
     var centerHeader = function() {
         if (!clickFlag) {
@@ -65,7 +65,7 @@ $(document).ready(function(){
                 $('.cover').css({'background-color': 'darkblue'});
                 $('.inner').css({'background-color': 'darkblue'});
                 $('.bottomhalf').css({'background-color': 'darkblue'});
-
+                $('.night_header').css({display: 'block'});
 
                 var $day = $('#day');
                 var $neon = $('#neon');
