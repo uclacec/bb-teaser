@@ -31,6 +31,13 @@ $(document).ready(function(){
 
                 //0 - 2 seconds in: crowds murmuring
                 //@GEORGE please insure murmuring sounds if you can find it
+                /*
+                var murmur = new Howl({
+                        urls: ['assets/NAME_HERE.mp3']  //if you find a good murmur mp3 you can just upload it  
+                                                        //to the assets file and put it in the URL where it
+                                                        //says NAME_HERE
+                    }).play();
+                */
 
                 //click icon disappear
                 $('#click').fadeOut();
@@ -45,14 +52,16 @@ $(document).ready(function(){
 
                     var allnight = new Howl({
                         urls: ['assets/AllNightIntro.mp3'],
+                        volume: 0.9
                     }).play();
 
-                    var allnightloop = new Howl({
-                        urls: ['assets/AllNightLoop.mp3'],
-                        loop: [0, 5000, true]
-                    });
-
-                    allnightloop.play('loop');
+                    setTimeout(function () {
+                            var allnightloop = new Howl({
+                                urls: ['assets/AllNightLoopable.mp3'],
+                                loop: true
+                            }).play();
+                        }, 17400);
+                    
 
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
@@ -69,8 +78,7 @@ $(document).ready(function(){
 
                     //sound of neon royce turning on
                     var buzz = new Howl({
-                        urls: ['assets/buzz.mp3'],
-                        volume: 0.5
+                        urls: ['assets/buzz.mp3']
                     }).play(); //a little louder? also a bit shorter so it doesn't overlap with the audience cheering so much
                     setTimeout(function () {
 
