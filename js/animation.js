@@ -39,14 +39,20 @@ $(document).ready(function(){
                 setTimeout(function () {
                     var lightsoff = new Howl({
                         urls: ['assets/lightsoff.mp3'],
-                        volume: 0.7
+                        volume: 0.5
                     }).play(); //This could be a little quieter
                                //made the change you can adjust the volume with the setting above(scale from 0.0 to 1.0)
 
                     var allnight = new Howl({
-                        urls: ['assets/AllNightLoopable.mp3'],
-                        volume: 0.7
+                        urls: ['assets/AllNightIntro.mp3'],
                     }).play();
+
+                    var allnightloop = new Howl({
+                        urls: ['assets/AllNightLoop.mp3'],
+                        loop: [0, 5000, true]
+                    });
+
+                    allnightloop.play('loop');
 
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
@@ -63,7 +69,8 @@ $(document).ready(function(){
 
                     //sound of neon royce turning on
                     var buzz = new Howl({
-                        urls: ['assets/buzz.mp3']
+                        urls: ['assets/buzz.mp3'],
+                        volume: 0.5
                     }).play(); //a little louder? also a bit shorter so it doesn't overlap with the audience cheering so much
                     setTimeout(function () {
 
@@ -75,7 +82,8 @@ $(document).ready(function(){
                         //4 seconds in: crowds cheer
                         setTimeout(function(){
                             var cheer = new Howl({
-                                urls: ['assets/crowdcheer.mp3']
+                                urls: ['assets/crowdcheer.mp3'],
+                                volume: 0.5
                             }).play();
                         },1000);
 
