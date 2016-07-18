@@ -75,7 +75,7 @@ div.header{
     background: -ms-linear-gradient(left, #ffff00 15%,#00cc99 65%,#33ccff 90%);
     background: linear-gradient(to right, #ffff00 15%,#00cc99 65%,#33ccff 90%);
 }
-
+/*Note to ASHLEY: change the values to non percentage values*/
 .inner {
     position: absolute; z-index: 1;
     top: 38%;
@@ -98,13 +98,13 @@ div.header{
 
 .cover {
     position: absolute; z-index: 2;
-    left: percentToShiftCover;
+    left: percentToShiftCover; /*Does this actually work?*/
     top: 0%;
     width: 50%; height: 300%;
     background: white;
-// -ms-transform: rotate(-70deg);
-// -webkit-transform: rotate(-70deg);
-// transform: rotate(-70deg);
+   -ms-transform: rotate(-70deg);
+   -webkit-transform: rotate(-70deg);
+   transform: rotate(-70deg);
 }
 
 /*AND THEN THE LAST PART THAT I DON'T QUITE KNOW HOW TO UNIFY*/
@@ -130,8 +130,21 @@ div.header{
     left:50vw;
     margin:-17vh 0 0 -17.5vw;
 }
+/*button to click on*/
+#click{
+    position:absolute;
+    top:15vh;
+    left:40vw;
+    z-index:20;
+}
+#clicked{cursor:pointer;}
 
+/*Neon Royce*/
+#neon{position:absolute;z-index:10;}
+.night{  display:none;  color: #F106C0;  }
+.light{  color: darkblue;  }
 
+/*Responsive Royce*/
 @media only screen and (max-width: 500px) {
     .royce{
         position:absolute;
@@ -176,26 +189,13 @@ div.header{
 
 }
 
-
-#neon{position:absolute;z-index:10;}
-.night{
-    display:none;
-    color: #F106C0;
-}
-
-.light{
-    color: darkblue;
-}
-
 /*glowing animation*/
 @keyframes glow {
     0% {opacity:1;}
     50% {opacity:0;}
     100%{opacity:1;}
 }
-#glow{
-    animation: glow infinite linear 2s;
-}
+#glow{  animation: glow infinite linear 2s;  }
 
 
 /*
