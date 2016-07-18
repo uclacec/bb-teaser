@@ -44,7 +44,9 @@ div.header{
     height:5vh;
 }
 
-
+.night_header{
+    display:none;
+}
 /*Arch*/
 #arc{
     position:absolute;
@@ -137,8 +139,7 @@ div.header{
 
 /*Neon Royce*/
 #neon{position:absolute;z-index:10;}
-.night{  display:none;  color: #F106C0;  }
-.light{  color: darkblue;  }
+.night{  display:none;  }
 
 /*Responsive Royce*/
 @media only screen and (max-width: 500px) {

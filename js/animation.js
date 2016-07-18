@@ -45,11 +45,14 @@ $(document).ready(function(){
                     $('.cover').css({'background-color': 'darkblue'});
                     $('.inner').css({'background-color': 'darkblue'});
                     $('.bottomhalf').css({'background-color': 'darkblue'});
+                    $('.night_header').css({display: 'block'});
 
 
                     var $day = $('#day');
                     var $neon = $('#neon');
                     $day.css({display: 'none'});
+                    $('.day').css({display: 'none'});
+
 
                     //sound of neon royce turning on
                     var buzz = new Howl({
