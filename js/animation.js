@@ -38,8 +38,15 @@ $(document).ready(function(){
                 //3 seconds in: scene goes dark, royce lights buzz on
                 setTimeout(function () {
                     var lightsoff = new Howl({
-                        urls: ['assets/lightsoff.mp3']
+                        urls: ['assets/lightsoff.mp3'],
+                        volume: 0.7
                     }).play(); //This could be a little quieter
+                               //made the change you can adjust the volume with the setting above(scale from 0.0 to 1.0)
+
+                    var allnight = new Howl({
+                        urls: ['assets/AllNightLoopable.mp3'],
+                        volume: 0.7
+                    }).play();
 
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
