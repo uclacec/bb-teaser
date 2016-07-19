@@ -11,20 +11,16 @@ body{
 
 /*Button to lottery page*/
 .button {
-    background-color: darkblue; /* Green */
+    background-color: darkblue;
     font-family: din;
+    color:white;
     position:absolute;
-    left:50vw;
-    top:10vh;
+    right:1vw;
+    bottom:2vh;
     z-index: 41;
-    border: 5px solid white;
-    border-radius:4cm;
-    color: white;
-    padding: 25px 32px;
-    margin-left: -100px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
+    text-align:center;
+    font-size: 28px;
+    padding: 15px 15px;
 }
 /*Header*/
 div.header{
@@ -144,7 +140,7 @@ div.header{
 
 /*Neon Royce*/
 #neon{position:absolute;z-index:10;}
-.night{  display:none;  color: #F106C0;  }
+.night{  display:none; }
 .light{  color: darkblue;  }
 
 /*Responsive Royce*/
