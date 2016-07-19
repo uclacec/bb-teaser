@@ -18,7 +18,8 @@ $(document).ready(function(){
 
     //0 seconds: when clicked, background changes to blue
         $('.royce').on('click',function(){
-            $('video').get(0).play()
+            // $('video').get(0).play()
+            // TODO: look into play non-fullscreen videos on iOS
 
             if(!clickFlag) {
                 // moves Bruin Bash left and right
