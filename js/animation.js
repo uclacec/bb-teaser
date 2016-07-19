@@ -32,6 +32,13 @@ $(document).ready(function(){
 
                 //0 - 2 seconds in: crowds murmuring
                 //@GEORGE please insure murmuring sounds if you can find it
+                /*
+                var murmur = new Howl({
+                        urls: ['assets/NAME_HERE.mp3']  //if you find a good murmur mp3 you can just upload it  
+                                                        //to the assets file and put it in the URL where it
+                                                        //says NAME_HERE
+                    }).play();
+                */
 
                 //click icon disappear
                 $('#click').fadeOut();
@@ -39,8 +46,23 @@ $(document).ready(function(){
                 //3 seconds in: scene goes dark, royce lights buzz on
                 setTimeout(function () {
                     var lightsoff = new Howl({
-                        urls: ['assets/lightsoff.mp3']
+                        urls: ['assets/lightsoff.mp3'],
+                        volume: 0.5
                     }).play(); //This could be a little quieter
+                               //made the change you can adjust the volume with the setting above(scale from 0.0 to 1.0)
+
+                    var allnight = new Howl({
+                        urls: ['assets/AllNightIntro.mp3'],
+                        volume: 0.9
+                    }).play();
+
+                    setTimeout(function () {
+                            var allnightloop = new Howl({
+                                urls: ['assets/AllNightLoopable.mp3'],
+                                loop: true
+                            }).play();
+                        }, 17400);
+                    
 
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
@@ -69,7 +91,8 @@ $(document).ready(function(){
                         //4 seconds in: crowds cheer
                         setTimeout(function(){
                             var cheer = new Howl({
-                                urls: ['assets/crowdcheer.mp3']
+                                urls: ['assets/crowdcheer.mp3'],
+                                volume: 0.5
                             }).play();
                         },1000);
 
