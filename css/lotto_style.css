@@ -18,14 +18,28 @@ body{
 
 #lotto_text{
     position:absolute;
-    top:200px;
+    top:250px;
     left:30vw;
     font-family:"din";
     text-align:center;
     color:pink;
-    font-size:150%;
+
 }
 
+#buttons{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    display:inline;
+}
+
+.active{
+    font-weight:bold;
+    background-color:grey;
+}
+.floor{}
+
+.upper_level{}
 #spacer{
     width: 200px;
     height: 100px;
