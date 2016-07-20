@@ -27,7 +27,7 @@ div.header{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top:60vh;
+    top:65vh;
     z-index: 40;
     font-size: 200%;
     text-align: center;
@@ -173,7 +173,7 @@ div.header{
         width:100vw;
         left:33vw;
         font-size: 150%;
-        margin: -3vh 0 0 -25vw;
+        margin: -3vh 0 0 -32vw;
     }
     .bruin, .bash, .spacer {
         display: block;
