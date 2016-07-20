@@ -57,7 +57,7 @@ $(document).ready(function(){
                                 urls: ['assets/AllNightLoopable.mp3'],
                                 loop: true
                             }).play();
-                        }, 17400);
+                        }, 17000);
 
 
                     $('body').css({'background-color': 'darkblue'});
