@@ -20,7 +20,7 @@ body{
     position:absolute;
     font-family:ebrima;
     color:darkblue;
-    top:30vh;
+    top:200px;
     left:20vw;
     width:60vw;
     z-index:2;
@@ -70,5 +70,10 @@ ul{
     }
     .signup_header{
         font-size:20px;
+    }
+}
+@media only screen and (max-width:250px) {
+    .buttons{
+        font-size: 18px;
     }
 }
