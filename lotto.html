@@ -48,13 +48,17 @@
     <script>
         function showUpper() {
             document.getElementById('floor').style.display = "none";
+            document.getElementById('bu_floor').style.backgroundColor = "transparent"
             document.getElementById('upper_level').style.display = "block";
+            document.getElementById('bu_upper').style.backgroundColor = "aqua";
         }
     </script>
     <script>
         function showFloor() {
             document.getElementById('upper_level').style.display = "none";
+            document.getElementById('bu_upper').style.backgroundColor = "transparent"
             document.getElementById('floor').style.display = "block";
+            document.getElementById('bu_floor').style.backgroundColor = "aqua"
         }
     </script>
 </body>

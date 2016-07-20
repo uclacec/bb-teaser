@@ -57,7 +57,7 @@ ul{
     display:none;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) and (min-width:426px) {
     .text_container{
         left:5vw;
         width:90vw;
@@ -72,9 +72,13 @@ ul{
         font-size:20px;
     }
 }
-@media only screen and (max-width:250px) {
+@media only screen and (max-width:425px){
+    .text_container{
+        left:5vw;
+        width:90vw;
+    }
     .buttons{
-        font-size: 14px;
+        font-size: 16px;
     }
     ul{
         font-size: 12px;
