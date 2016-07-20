@@ -1,6 +1,6 @@
 @font-face {
-    font-family:din;
-    src:url("assets/din_regular.ttf");
+    font-family:'ebrima';
+    src:url("../assets/ebrima.ttf");
 }
 
 body{
@@ -16,39 +16,59 @@ body{
     margin-left: -125px;
 }
 
-#lotto_text{
+.text_container{
     position:absolute;
-    top:250px;
-    left:30vw;
-    font-family:"din";
-    text-align:center;
-    color:pink;
-
+    font-family:ebrima;
+    color:darkblue;
+    top:30vh;
+    left:20vw;
+    width:60vw;
+    z-index:2;
 }
 
+ul{
+    font-size:18px;
+}
 
-
-.active{
+.buttons{
+    font-size:30px;
+    display:inline;
     font-weight:bold;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+    cursor:pointer;
+    vertical-align:top;
+}
+
+.buttons:hover{
     background-color:grey;
 }
-.floor{}
 
-.upper_level{}
-#spacer{
-    width: 200px;
-    height: 100px;
-    float:left;
-    display:inline-block
+#bu_upper{
+    position:absolute;
+    right:0px;
 }
 
-@media only screen and (max-width: 500px){
+.signup_header{
+    font-size:26px;
+}
 
-    div#lotto_text{
-        word-break:break-all;
-        position:absolute;
-        width:100vw;
-        font-size:100%;
-        margin-left: -30vw;
+#upper_level{
+    display:none;
+}
+
+@media only screen and (max-width: 800px) {
+    .text_container{
+        left:5vw;
+        width:90vw;
+    }
+    .buttons{
+        font-size:22px;
+    }
+    ul{
+        font-size:14px;
+    }
+    .signup_header{
+        font-size:20px;
     }
 }

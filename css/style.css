@@ -5,8 +5,8 @@ body{
 }
 
 @font-face {
-    font-family:din;
-    src:url("assets/din_regular.ttf");
+    font-family:'din';
+    src:url("../assets/din_regular.ttf");
 }
 
 /*Button to lottery page*/
