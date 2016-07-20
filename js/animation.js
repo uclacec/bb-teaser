@@ -18,23 +18,19 @@ $(document).ready(function(){
 
     //0 seconds: when clicked, background changes to blue
         $('.royce').on('click',function(){
+            // $('video').get(0).play()
+            // TODO: look into play non-fullscreen videos on iOS
+
             if(!clickFlag) {
-                //moves Bruin Bash left and right
-                if ($(window).width() > 500) {
-                    $(".bash").animate({left: "85%"}, 800);
-                    $(".bruin").animate({left: "-2%"}, 800);
-                }
-                else{
-                    $(".bruin").animate({left: "2%"}, 800);
-                    $(".bash").animate({left: "70%"}, 800);
-                    $('#click').attr('src','assets/Tap.gif');
-                }
+                // moves Bruin Bash left and right
+                $(".spacer").animate({width: Math.min(250, window.innerWidth * 2/3)}, 800);
+                $(".spacer").animate({height: 75}, 800);
 
                 //0 - 2 seconds in: crowds murmuring
                 //@GEORGE please insure murmuring sounds if you can find it
                 /*
                 var murmur = new Howl({
-                        urls: ['assets/NAME_HERE.mp3']  //if you find a good murmur mp3 you can just upload it  
+                        urls: ['assets/NAME_HERE.mp3']  //if you find a good murmur mp3 you can just upload it
                                                         //to the assets file and put it in the URL where it
                                                         //says NAME_HERE
                     }).play();
@@ -61,14 +57,14 @@ $(document).ready(function(){
                                 urls: ['assets/AllNightLoopable.mp3'],
                                 loop: true
                             }).play();
-                        }, 17400);
-                    
+                        }, 17000);
+
 
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
                     $('.inner').css({'background-color': 'darkblue'});
                     $('.bottomhalf').css({'background-color': 'darkblue'});
-                    $('.night_header').css({display: 'block'});
+                    $('.night_header').removeClass('night_header');
 
 
                     var $day = $('#day');
