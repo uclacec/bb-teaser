@@ -9,10 +9,13 @@ body{
     src:url("../assets/din_regular.ttf");
 }
 
-#cecsocialmedia, #cacsocialmedia{ position:absolute; display:none; }
+#cecsocialmedia, #cacsocialmedia{ position:absolute; display:none; z-index:30; }
 #cecsocialmedia{top:5vh; left:5vw;}
 #cacsocialmedia{top:5vh; left:83vw;}
 .icon{width:2em;}
+@media only screen and (max-width: 500px) {
+    #cacsocialmedia{ left:56vw;}
+}
 
 /*Button to lottery page*/
 .button {
@@ -156,8 +159,9 @@ div.header{
         position:absolute;
         z-index:3;
         width:90vw;
-        margin:-15vh 0 0 -44vw;
     }
+    .royce.light{margin:-15vh 0 0 -44vw;}
+    .royce.night{margin:-15vh 0 0 -47vw;}
     div.header{
         position:absolute;
         width:100vw;
