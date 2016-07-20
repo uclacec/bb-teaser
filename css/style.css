@@ -9,6 +9,11 @@ body{
     src:url("../assets/din_regular.ttf");
 }
 
+#cecsocialmedia, #cacsocialmedia{ position:absolute; display:none; }
+#cecsocialmedia{top:5vh; left:5vw;}
+#cacsocialmedia{top:5vh; left:83vw;}
+.icon{width:2em;}
+
 /*Button to lottery page*/
 .button {
     background-color: darkblue;
@@ -22,6 +27,7 @@ body{
     font-size: 28px;
     padding: 15px 15px;
 }
+
 /*Header*/
 div.header{
     position: relative;
@@ -65,17 +71,12 @@ div.header{
     display:none;
 }
 /*Arch*/
-#arc{
-    position:absolute;
-    left:28vw;
-    top:19vh;
-}
 .tophalf {
     position: absolute; z-index: -1;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%);
-    width: 50%; height:180%;
+    width: 45%; height:180%;
     -webkit-border-top-left-radius: 50%;
     -webkit-border-top-right-radius: 50%;
     -moz-border-radius-topleft: 50%;
@@ -90,36 +91,25 @@ div.header{
     background: -ms-linear-gradient(left, #ffff00 15%,#00cc99 65%,#33ccff 90%);
     background: linear-gradient(to right, #ffff00 15%,#00cc99 65%,#33ccff 90%);
 }
-/*Note to ASHLEY: change the values to non percentage values*/
+
 .inner {
     position: absolute; z-index: 1;
-    top: 38%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%);
-    width: 45%; height: 150%;
+    width: 40%; height: 145%;
     background-color: white;
     border-color: white;
     border-radius: 100%;
 }
 
 .bottomhalf {
-    position:absolute; z-index: 0;
+    position:absolute;
     left: 50%;
     transform: translate(-50%);
     top:100%;
-    width: 50%; height:300%;
+    width: 45%; height:300%;
     background: white;
-}
-
-.cover {
-    position: absolute; z-index: 2;
-    left: percentToShiftCover; /*Does this actually work?*/
-    top: 0%;
-    width: 50%; height: 300%;
-    background: white;
-   -ms-transform: rotate(-70deg);
-   -webkit-transform: rotate(-70deg);
-   transform: rotate(-70deg);
 }
 
 /*AND THEN THE LAST PART THAT I DON'T QUITE KNOW HOW TO UNIFY*/

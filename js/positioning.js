@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     //To reveal the arch based on how close the date is to launch date
     var start = new Date(2016,6,10);
-    var end = new Date(2016,8,19);
+    var end = new Date(2016,8,12);
 
     var today = new Date();
     var dd = today.getDate();
@@ -14,7 +14,6 @@ $(document).ready(function(){
     if(mm<10){
         mm='0'+mm
     }
-    var today = dd+'/'+mm+'/'+yyyy;
-
-    var percentToShiftCover = 25 + Math.round((today - start)/(end - start) * 100) + '%';
+    today = dd+'/'+mm+'/'+yyyy;
+    //var percent = Math.round((today - start)(end - start) * 100);
 });

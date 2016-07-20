@@ -25,6 +25,8 @@ $(document).ready(function(){
                 // moves Bruin Bash left and right
                 $(".spacer").animate({width: Math.min(250, window.innerWidth * 2/3)}, 800);
                 $(".spacer").animate({height: 75}, 800);
+                $("#cecsocialmedia").fadeIn();
+                $("#cacsocialmedia").fadeIn();
 
                 //0 - 2 seconds in: crowds murmuring
                 //@GEORGE please insure murmuring sounds if you can find it
