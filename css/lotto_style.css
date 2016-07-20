@@ -74,6 +74,12 @@ ul{
 }
 @media only screen and (max-width:250px) {
     .buttons{
-        font-size: 18px;
+        font-size: 14px;
+    }
+    ul{
+        font-size: 12px;
+    }
+    .signup_header{
+        font-size: 14px;
     }
 }
