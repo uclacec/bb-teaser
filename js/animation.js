@@ -61,7 +61,7 @@ $(document).ready(function(){
                             }).play();
                         }, 17000);
 
-
+                    $('#arc').fadeOut();
                     $('body').css({'background-color': 'darkblue'});
                     $('.cover').css({'background-color': 'darkblue'});
                     $('.inner').css({'background-color': 'darkblue'});
