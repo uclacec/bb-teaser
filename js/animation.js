@@ -3,6 +3,8 @@
  */
 
 $(document).ready(function(){
+    var lightsout, allnight, allnightloop, buzz, cheer;
+
     //has the flag been clicked
     var clickFlag = 0; //no
 
@@ -43,19 +45,19 @@ $(document).ready(function(){
 
                 //3 seconds in: scene goes dark, royce lights buzz on
                 setTimeout(function () {
-                    var lightsoff = new Howl({
+                    lightsoff = new Howl({
                         urls: ['assets/lightsoff.mp3'],
                         volume: 0.5
                     }).play(); //This could be a little quieter
                                //made the change you can adjust the volume with the setting above(scale from 0.0 to 1.0)
 
-                    var allnight = new Howl({
+                    allnight = new Howl({
                         urls: ['assets/AllNightIntro.mp3'],
                         volume: 0.9
                     }).play();
 
                     setTimeout(function () {
-                            var allnightloop = new Howl({
+                            allnightloop = new Howl({
                                 urls: ['assets/AllNightLoopable.mp3'],
                                 loop: true
                             }).play();
@@ -76,7 +78,7 @@ $(document).ready(function(){
 
 
                     //sound of neon royce turning on
-                    var buzz = new Howl({
+                    buzz = new Howl({
                         urls: ['assets/buzz.mp3']
                     }).play(); //a little louder? also a bit shorter so it doesn't overlap with the audience cheering so much
                     setTimeout(function () {
@@ -99,4 +101,14 @@ $(document).ready(function(){
             }
             clickFlag = 1;
         });
+    //mute button
+    $("#mute").click(function() {
+        lightsoff.mute();
+        buzz.mute();
+        cheer.mute();
+        allnight.mute();
+        allnightloop.mute();
+        alert ('silence');
+    });
+
 });
