@@ -17,6 +17,21 @@ body{
     #cacsocialmedia{ left:56vw;}
 }
 
+/*Loader*/
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../assets/Loading-Gif.gif) center no-repeat #fff;
+}
+
 /*Button to lottery page*/
 .button {
     background-color: darkblue;
@@ -220,6 +235,7 @@ div.header{
 
 
 /*AJAX Loading CSS*/
+/*
 .modal {
     display:    none;
     position:   fixed;
@@ -236,15 +252,21 @@ div.header{
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
+/*
 body.loading {
     overflow: hidden;
 }
 
 /* Anytime the body has the loading class, our
    modal element will be visible */
+/*
 body.loading .modal {
     display: block;
 }
+*/
+
+
+
 
 
 /*

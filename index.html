@@ -8,6 +8,7 @@
     <link href="assets/Favicon.png" rel="icon">
 </head>
 <body>
+<div class="se-pre-con"></div>
 <div id="line"></div>
 <div class='container'>
     <!--Social Media Icons-->
@@ -79,11 +80,19 @@
     <div class="modal"><!-- Place at bottom of page --></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <!---Howler.js cdn import-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.29/howler.min.js"></script>
     <!--Arc positioning + any other positioning if necessary-->
     <script src = "js/positioning.js"></script>
     <!--Animation + sounds upon click-->
     <script src="js/animation.js"></script>
+    <script>
+    // Wait for window load
+    $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");
+    });
+    </script>
 </body>
 </html>
