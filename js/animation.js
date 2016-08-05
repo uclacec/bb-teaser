@@ -64,10 +64,10 @@ $(document).ready(function(){
                         }, 17000);
 
                     $('#arc').fadeOut();
-                    $('body').css({'background-color': 'darkblue'});
-                    $('.cover').css({'background-color': 'darkblue'});
-                    $('.inner').css({'background-color': 'darkblue'});
-                    $('.bottomhalf').css({'background-color': 'darkblue'});
+                    $('body').css({'background-color': 'rgb(9,3,68)'});
+                    $('.cover').css({'background-color': 'rgb(9,3,68)'});
+                    $('.inner').css({'background-color': 'rgb(9,3,68)'});
+                    $('.bottomhalf').css({'background-color': 'rgb(9,3,68)'});
                     $('.night_header').removeClass('night_header');
 
 
